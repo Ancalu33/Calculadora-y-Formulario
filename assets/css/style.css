@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    background-color: #8fc0a9;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #68b0ab;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+h1 {
+    text-align: center;
+    padding: 2rem;
+    font-size: 3rem;
+    color: rgb(56, 56, 56);
+    letter-spacing: 4px;
+    
+    
+}
+
+h2 {
+    text-align: center;
+    padding: 1rem;
+    color:#424242;
+
+}
+
+.calc {
+
+    background-color: #c8d5b9;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+    margin: 10rem 20rem;
+    border: 3px solid #555555;
+
+}
+
+.calc div {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.datos input {
+    background: silver;
+    border: 2px solid #393939;
+    border-radius: 5px 5px 5px 5px;
+    color: #393939;
+    font-size: 14px;
+    padding: 5px;
+    
+
+}
+
+
+.resultado {
+
+    font-family: 'Trebuchet MS';
+    font-size: x-large;
+    color: rgb(66, 66, 66);
+    padding: 2rem;
+    justify-content: left;
+}
+
+.resultado span {
+    color: #faf3dd;
+    
+}
+
+
+button {
+    background-color: transparent;
+    border: 3px solid #555555;
+    color: #555555;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20%;
+    font-weight: bold;
+}
