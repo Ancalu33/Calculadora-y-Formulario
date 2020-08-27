@@ -51,3 +51,35 @@ function operacion(operador) {
     }
     return false;
 } */
+
+const mensajeNombre = document.getElementById('mensajeAlertaNombre')
+console.log(mensajeNombre)
+const mensajeTyC = document.getElementById('mensajeAlertaTyc')
+console.log(mensajeNombre)
+
+function validarFormulario(event) {
+    event.preventDefault()
+    let inputName = document.getElementById('name')
+    console.log(inputName)
+    let inputTyC = document.getElementById('chekboxTyC')
+    console.log(inputTyC)
+
+    if (inputName.value == '') {
+        mensajeNombre.innerText = "Complete el campo nombre"
+        inputName.classList.add('bgcAlert')
+        swal("Error", "Ingrese nombre!", "error");
+
+    }
+    if (inputTyC.cheked == false) {
+        mensajeTyC.innerText = "Acepte los terminos y condiciones"
+        swal("Error", "Acepte los terminos y condiciones!", "error");
+    }
+
+    if (inputName != "" && inputTyC.cheked) {
+
+        swal("Muy bien!","registro existoso","success");
+        
+    }
+
+
+}

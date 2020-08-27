@@ -18,8 +18,8 @@
     <section class="calc">
 
         <div class="datos">
-            <input type="number" id="num1" required > <!-- onkeypress='return validaNumericos(event)'/ -->
-            <input type="number" id="num2" required > <!-- onkeypress='return validaNumericos(event)'/ -->
+            <input type="number" id="num1" required> <!-- onkeypress='return validaNumericos(event)'/ -->
+            <input type="number" id="num2" required> <!-- onkeypress='return validaNumericos(event)'/ -->
         </div>
         <div class="operaciones">
             <button onclick="operacion('+')">+</button>
@@ -32,7 +32,42 @@
         </div>
     </section>
 
+    <section class="contInput">
+        <form onsubmit="validarFormulario(event)" class="formContact">
+            <div class="divInput">
+                <label for="">Nombre</label>
+                <input type="text" placeholder="Pepito" id="name">
+                <small id="mensajeAlertaNombre" class="mensajeAlerta"></small>
+            </div>
+            <div class="divInput">
+                <label for="">Apellido</label>
+                <input type="text" placeholder="Perez">
+            </div>
+            <div class="divInput">
+                <label for="">Correo</label>
+                <input type="email" placeholder="ejemplo@ejem.com">
+            </div>
+            <div class="divInput">
+                <label for="">Password</label>
+                <input type="password">
+            </div>
+            <div class="divInput">
+                <label for="">Edad</label>
+                <input type="number">
+            </div>
+            <div class="divInput inputCheckbox">
+                <label for="chekboxTyC">Acepta terminos y condiciones</label>
+                <input type="checkbox" id="chekboxTyC">
+            </div>
+            <small id="mensajeAlertTyC" class="mensajeAlerta"></small>
+            <input type="submit" value="Enviar" id="btnEnviar" />
+
+        </form>
+
+    </section>
+
 </body>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="./assets/js/scripts.js"></script>
 
 </html>
