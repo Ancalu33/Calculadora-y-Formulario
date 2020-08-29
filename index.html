@@ -4,63 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>Registro</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
     <header>
-        <h1>Calculadora</h1>
-        <h2>Por Andres Lugo...</h2>
+        <h1>Calculadora </h1>
+        <h2>Registrese por favor <i class="fas fa-user-plus"></i></i></h2>
 
     </header>
-    <section class="calc">
-
-        <div class="datos">
-            <input type="number" id="num1" required> <!-- onkeypress='return validaNumericos(event)'/ -->
-            <input type="number" id="num2" required> <!-- onkeypress='return validaNumericos(event)'/ -->
-        </div>
-        <div class="operaciones">
-            <button onclick="operacion('+')">+</button>
-            <button onclick="operacion('-')">-</button>
-            <button onclick="operacion('*')">*</button>
-            <button onclick="operacion('/')">/</button>
-        </div>
-        <div class="resultado">
-            Resultado: <span id="Res"></span>
-        </div>
-    </section>
 
     <section class="contInput">
         <form onsubmit="validarFormulario(event)" class="formContact">
             <div class="divInput">
-                <label for="">Nombre</label>
+                <label for="name">Nombre</label>
                 <input type="text" placeholder="Pepito" id="name">
                 <small id="mensajeAlertaNombre" class="mensajeAlerta"></small>
             </div>
             <div class="divInput">
                 <label for="">Apellido</label>
-                <input type="text" placeholder="Perez">
+                <input type="text" placeholder="Perez" id="lastname">
+                <small id="mensajeAlertaApellido" class="mensajeAlerta"></small>
             </div>
             <div class="divInput">
                 <label for="">Correo</label>
-                <input type="email" placeholder="ejemplo@ejem.com">
+                <input type="email" placeholder="ejemplo@ejem.com" id="email">
+                <small id="mensajeAlertaCorreo" class="mensajeAlerta"></small>
             </div>
             <div class="divInput">
                 <label for="">Password</label>
-                <input type="password">
+                <input type="password" id="password">
+                <small id="mensajeAlertaPassword" class="mensajeAlerta"></small>
             </div>
             <div class="divInput">
                 <label for="">Edad</label>
-                <input type="number">
+                <input type="number" id="years">
+                <small id="mensajeAlertaEdad" class="mensajeAlerta"></small>
             </div>
             <div class="divInput inputCheckbox">
-                <label for="chekboxTyC">Acepta terminos y condiciones</label>
+                <label for="chekboxTyC" class="labelTyC">Acepta terminos y condiciones</label>
                 <input type="checkbox" id="chekboxTyC">
+                <small id="mensajeAlertTyC" class="mensajeAlerta"></small>
+
             </div>
-            <small id="mensajeAlertTyC" class="mensajeAlerta"></small>
-            <input type="submit" value="Enviar" id="btnEnviar" />
+            
+            
+            <input type="submit" value="Enviar" class="btnEnviar" />
 
         </form>
 

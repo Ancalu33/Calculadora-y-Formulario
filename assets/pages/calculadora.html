@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+    <header>
+        <h1>Calculadora</h1>
+        <h2>Por Andres Lugo...</h2>
+
+    </header>
+    <section class="calc">
+        <div class="divCalc">
+            <div class="datos">
+                <input type="number" id="num1" class="inputNum" required>
+                <!-- onkeypress='return validaNumericos(event)'/ -->
+                <input type="number" id="num2" class="inputNum" required>
+                <!-- onkeypress='return validaNumericos(event)'/ -->
+            </div>
+            <div class="operaciones">
+                <button class="btnOperacion" onclick="operacion('+')">+</button>
+                <button class="btnOperacion" onclick="operacion('-')">-</button>
+                <button class="btnOperacion" onclick="operacion('*')">*</button>
+                <button class="btnOperacion" onclick="operacion('/')">/</button>
+            </div>
+            <div class="resultado">
+                Resultado: <span id="Res"></span>
+
+            </div>
+
+            <button  class="btnHome"> <a href="../../index.html"> Nuevo registro </a> </button>
+        </div>
+    </section>
+
+</body>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="../js/scripts.js"></script>
+<script src="../js/scriptCalculadora.js"></script>
+
+
+</html>

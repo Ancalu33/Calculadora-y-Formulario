@@ -22,30 +22,31 @@ header {
 
 h1 {
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 1rem 1rem;
     font-size: 3rem;
     color: rgb(56, 56, 56);
     letter-spacing: 4px;
-    
-    
+
+
 }
 
 h2 {
     text-align: center;
-    padding: 1rem;
-    color:#424242;
-
+    padding: 0rem 1rem 2rem;
+    ;
+    color: #424242;
 }
 
-.calc {
-
+.divCalc {
+    width: 40%;
     background-color: #c8d5b9;
     display: flex;
     flex-flow: column;
-    align-content: center;
-    align-items: center;
-    margin: 10rem 20rem;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
     border: 3px solid #555555;
+    margin: auto;
+    align-items: center;
 
 }
 
@@ -54,34 +55,33 @@ h2 {
     padding-bottom: 1rem;
 }
 
-.datos input {
-    background: silver;
-    border: 2px solid #393939;
-    border-radius: 5px 5px 5px 5px;
-    color: #393939;
-    font-size: 14px;
-    padding: 5px;
-    
-
-}
-
 
 .resultado {
-
     font-family: 'Trebuchet MS';
     font-size: x-large;
     color: rgb(66, 66, 66);
     padding: 2rem;
     justify-content: left;
+
 }
 
 .resultado span {
     color: #faf3dd;
-    
 }
 
+.operaciones {
+    display: inline-block;
+    text-align: center;
 
-button {
+}
+
+.datos {
+    display: inline-block;
+    text-align: center;
+
+}
+
+.btnOperacion {
     background-color: transparent;
     border: 3px solid #555555;
     color: #555555;
@@ -97,63 +97,109 @@ button {
 }
 
 
-.contInput{
+.divInput {
     display: flex;
     flex-direction: column;
+    margin-top: 2rem;
 }
 
-.divInput{
-    display: flex;
-    flex-direction: column;
-    margin-top:2rem;
-}
-.contInput div>label{   /* Hijo directo*/
+.formContact div label {
     margin-bottom: 30px;
 }
 
-.contInput form{
-    width:40%;
-    margin:auto;
+.contInput{
+    padding-top: 1rem;
+}
+.contInput form {
+    width: 40%;
+    margin: auto;
     padding-bottom: 3rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
-.divInput input{
+.divInput input {
     background-color: rgb(255, 250, 182);
     padding: 10px 15px;
     border-radius: 10px;
     border: none;
 }
 
-.contInput input:hover{ 
-    box-shadow: 0px 5px 5px black;
+.contInput input:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.50);
 
 }
 
-#btnEnviar{
-    margin-top:2rem;
+.labelTyC {
+    margin: 0 !important;
+}
+
+.btnEnviar {
+    margin-top: 2rem;
     align-self: center;
     border: none;
-    padding: 5px 10px;
+    padding: 15px 20px;
     border-radius: 10px;
-    background-color: #4873df;
+    background-color: #6b92f7;
     cursor: pointer;
+    font-size: 1.2rem;
+
 }
 
-.mensajeAlerta{
+.mensajeAlerta {
     color: tomato;
-    margin-top:5px;
+    margin-top: 5px;
+    font-weight: bold;
 }
 
-.inputCheckbox{
+.inputCheckbox {
     flex-direction: row;
-    justify-content: space-around;  /* justify eje actual */
+    justify-content: space-around;
+    /* justify eje actual */
     align-items: center;
-    
+
 }
-.inputCheckbox>label{
+
+.inputCheckbox>label {
     order: 2;
 }
 
-.bgcAlert{
+.inputCheckbox>small {
+    order: 3;
+}
+
+.bgcAlert {
     background-color: rgb(255, 173, 159) !important;
+}
+
+.datos>.inputNum {
+    background: silver;
+    border: 2px solid #393939;
+    border-radius: 5px 5px 5px 5px;
+    color: #393939;
+    font-size: 14px;
+    padding: 5px;
+    display: inline-flex;
+    align-items: center;
+    margin: 1rem 1rem;
+    width: 40%;
+
+}
+
+.btnHome{
+    margin-top: 2rem;
+    align-self: center;
+    border: none;
+    padding: 8px 13px;
+    border-radius: 10px;
+    background-color: #7c7c7c;
+    cursor: pointer;
+    font-size: 0.9rem;
+
+}
+
+.btnHome a{
+    text-decoration: none;
+    color: white;
 }
